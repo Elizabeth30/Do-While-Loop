@@ -10,14 +10,15 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int i=0;
-        do {
+        int i=1;
+        bool done=false;
+        while(!done){
+            if (i>107) {
+                done=true;
+            }
             NSLog (@"%i",i);
             i++;
-        } while ( i<11);
-        
-        
-      
+        }
     }
     return 0;
 }
